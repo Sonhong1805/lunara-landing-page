@@ -1,4 +1,3 @@
-/* --- start overview --- */
 .overview {
   padding-top: 4vmax;
   padding-bottom: 2vmax;
@@ -404,8 +403,6 @@ button.close-modal img {
 button.close-modal:hover img {
   transform: rotate(90deg);
 }
-
-/* --- end overview --- */
 
 @media only screen and (max-width: 769px) {
   .overview {

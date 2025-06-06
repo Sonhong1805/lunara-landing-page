@@ -1,5 +1,3 @@
-/* --- start bestseller --- */
-
 .bestseller {
   padding-top: 2vmax;
   padding-bottom: 4vmax;
@@ -189,8 +187,6 @@
   background: #000;
   transition: width 0.3s;
 }
-
-/* --- end bestseller --- */
 
 @media only screen and (max-width: 769px) {
   .bestseller {

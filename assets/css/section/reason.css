@@ -1,5 +1,3 @@
-/* --- start reason --- */
-
 .reason {
   display: flex;
   flex-direction: column;
@@ -26,8 +24,6 @@
   gap: 1vmax;
   flex: 1 0 33rem;
 }
-
-/* --- end reason --- */
 
 @media only screen and (max-width: 769px) {
   .reason__list article {

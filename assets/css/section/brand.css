@@ -1,5 +1,3 @@
-/* --- start brand --- */
-
 .brand {
   padding-top: 2vmax;
   padding-bottom: 2vmax;
@@ -26,8 +24,6 @@
     transform: translateX(-50%);
   }
 }
-
-/* --- end brand --- */
 
 @media only screen and (max-width: 769px) {
   .brand {

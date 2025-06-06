@@ -1,4 +1,3 @@
-/* --- start moment --- */
 .moment {
   padding-top: 2vmax;
   padding-bottom: 4vmax;
@@ -50,8 +49,6 @@
   object-fit: cover;
   object-position: center center;
 }
-
-/* --- end moment --- */
 
 @media only screen and (max-width: 769px) {
   .moment {

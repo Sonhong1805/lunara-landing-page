@@ -1,5 +1,3 @@
-/* --- start skin --- */
-
 .skin {
   padding-block: 2vmax;
 }
@@ -47,8 +45,6 @@
   aspect-ratio: 4 / 3;
   object-position: 50% 50%;
 }
-
-/* --- end skin --- */
 
 @media only screen and (max-width: 769px) {
   .skin__wrapper {

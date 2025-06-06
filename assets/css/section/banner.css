@@ -1,4 +1,3 @@
-/* --- start banner --- */
 .banner {
   display: flex;
 }
@@ -36,8 +35,6 @@
 .banner figure img {
   vertical-align: middle;
 }
-
-/* --- end banner --- */
 
 @media only screen and (max-width: 769px) {
   .banner {

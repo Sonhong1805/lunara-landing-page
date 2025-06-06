@@ -1,5 +1,3 @@
-/* --- start comparison --- */
-
 .comparison {
   padding-top: 3vmax;
   padding-bottom: 2vmax;
@@ -110,8 +108,6 @@
   -webkit-appearance: none;
   cursor: e-resize;
 }
-
-/* --- end comparison --- */
 
 @media only screen and (max-width: 769px) {
   .comparison {

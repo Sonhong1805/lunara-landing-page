@@ -1,5 +1,3 @@
-/* --- start footer --- */
-
 .footer {
   padding-top: 3vmax;
   padding-bottom: 3vmax;
@@ -65,8 +63,6 @@
   background: color-mix(in srgb, var(--transparent) 100%, transparent);
   height: auto;
 }
-
-/* --- end footer --- */
 
 @media only screen and (max-width: 769px) {
   .footer__wrapper {
