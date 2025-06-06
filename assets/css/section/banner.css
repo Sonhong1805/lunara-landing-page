@@ -1,0 +1,55 @@
+/* --- start banner --- */
+.banner {
+  display: flex;
+}
+
+.banner__content {
+  background: color-mix(in srgb, var(--background_600) 100%, transparent);
+  padding-top: 4vmax;
+  padding-right: 2vmax;
+  padding-bottom: 4vmax;
+  padding-left: 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1vmax;
+  align-self: unset;
+  height: unset;
+  width: unset;
+  flex: 0 0 35%;
+}
+
+.banner__content h1 {
+  text-align: center;
+  font-family: var(--font-cabin);
+}
+
+.banner__content--btn a {
+  display: inline-block;
+}
+
+.banner figure {
+  flex: 1 1 auto;
+}
+
+.banner figure img {
+  vertical-align: middle;
+}
+
+/* --- end banner --- */
+
+@media only screen and (max-width: 769px) {
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner__content {
+    width: 100%;
+    padding: 4vmax;
+  }
+
+  .banner figure {
+    aspect-ratio: 5 / 4;
+  }
+}

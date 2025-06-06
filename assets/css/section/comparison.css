@@ -1,0 +1,124 @@
+/* --- start comparison --- */
+
+.comparison {
+  padding-top: 3vmax;
+  padding-bottom: 2vmax;
+}
+
+.comparison__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  height: fit-content;
+  flex: 1;
+}
+
+.comparison__wrapper {
+  position: relative;
+  height: 60rem;
+  overflow: hidden;
+}
+
+.comparison__images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.image-left {
+  background: url("../../../assets/img/banner3.jpg") no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  height: 100%;
+}
+
+.image-right {
+  background: url("../../../assets/img/banner4.jpg") no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 0 0 50%);
+}
+
+.comparison__slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+}
+
+.comparison__slider--line {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+  background: white;
+  cursor: e-resize;
+}
+
+.comparison__button {
+  background: var(--white);
+  width: 3.5rem;
+  height: 6rem;
+  border-radius: 5rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: e-resize;
+  left: -15px;
+  top: 50%;
+  translate: 0 -50%;
+  animation: pulse-animation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes pulse-animation {
+  from {
+    box-shadow: rgba(61, 61, 61, 0.8) 0px 0px 2px 0px,
+      rgba(255, 255, 255, 0.165) 0px 0px 0px 4.85087px;
+  }
+
+  to {
+    box-shadow: rgba(61, 61, 61, 0.8) 0px 0px 2px 0px,
+      rgba(255, 255, 255, 0.298) 0px 0px 0px 11.731px;
+  }
+}
+
+.comparison__button img {
+  width: 2.4rem;
+  height: 2.4rem;
+  rotate: -90deg;
+}
+
+.comparison__slider input {
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.comparison__slider input::-webkit-slider-thumb {
+  height: 60rem;
+  width: 3px;
+  background: none;
+  padding-inline: 1rem;
+  -webkit-appearance: none;
+  cursor: e-resize;
+}
+
+/* --- end comparison --- */
+
+@media only screen and (max-width: 769px) {
+  .comparison {
+    padding-bottom: 3vmax;
+  }
+
+  .comparison__wrapper {
+    height: 36rem;
+  }
+}

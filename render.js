@@ -45,7 +45,7 @@ const renderBestseller = (data) => {
     return `
         <div class="swiper-slide">
           <article class="bestseller__item">
-            <a href=${element.url} class="bestseller__thumbnail">
+            <a href="${element.url}" class="bestseller__thumbnail">
               <figure>
                 <img
                   src=${element.image}
@@ -114,7 +114,7 @@ const renderBestseller = (data) => {
 
   document.querySelector(".bestseller__list").innerHTML = html.join("");
 };
-// renderBestseller(bestsellers);
+renderBestseller(bestsellers);
 
 const renderService = (data) => {
   let html = "";

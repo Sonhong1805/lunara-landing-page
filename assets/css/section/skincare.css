@@ -1,0 +1,47 @@
+/* --- start skincare --- */
+
+.skincare {
+  position: relative;
+}
+
+.skincare__video video {
+  max-height: 556.04px;
+}
+
+.skincare__wrapper {
+  padding-top: 12vmax;
+  padding-bottom: 12vmax;
+  position: absolute;
+  inset: 0;
+}
+
+.skincare__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vmax;
+  flex: 1;
+}
+
+.skincare__content .text-p2,
+.skincare__content .text-h2 {
+  color: var(--white);
+}
+
+.skincare__content--button .btn {
+  color: var(--text_600);
+  background: var(--white);
+  border-color: var(--black);
+}
+
+.skincare__content--button .btn:hover {
+  color: var(--text_600);
+  background: var(--secondary_100);
+  box-shadow: 0px 0px 0px 0px black;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+/* --- end skincare --- */

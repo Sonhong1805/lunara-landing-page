@@ -1,0 +1,62 @@
+/* --- start skin --- */
+
+.skin {
+  padding-block: 2vmax;
+}
+
+.skin__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.skin__content {
+  flex: 1 1 auto;
+  padding-right: 6vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1vmax;
+}
+
+.skin__content .text-p1 {
+  text-align: left;
+}
+
+.skin__content .btn {
+  background-color: var(--secondary_900);
+  color: var(--black);
+}
+
+.skin__content .btn:hover {
+  color: var(--black);
+  background: var(--secondary_700);
+  border-style: solid;
+  border-color: var(--white);
+  border-width: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px 0px black;
+}
+
+.skin figure {
+  flex: 1 0 50%;
+}
+
+.skin figure img {
+  aspect-ratio: 4 / 3;
+  object-position: 50% 50%;
+}
+
+/* --- end skin --- */
+
+@media only screen and (max-width: 769px) {
+  .skin__wrapper {
+    flex-direction: column-reverse;
+    gap: 3vmax;
+  }
+
+  .skin__content {
+    padding: 0;
+  }
+}

@@ -1,0 +1,36 @@
+/* --- start reason --- */
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  padding-top: 3vmax;
+  padding-bottom: 2vmax;
+}
+
+.reason__list {
+  display: flex;
+  gap: var(--items-gap);
+  overflow-x: auto;
+  user-select: none;
+}
+
+.reason__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.reason__list article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vmax;
+  flex: 1 0 33rem;
+}
+
+/* --- end reason --- */
+
+@media only screen and (max-width: 769px) {
+  .reason__list article {
+    flex: 1 0 43.3rem;
+  }
+}

@@ -1,0 +1,47 @@
+/* --- start brand --- */
+
+.brand {
+  padding-top: 2vmax;
+  padding-bottom: 2vmax;
+}
+
+.brand__list {
+  overflow: hidden;
+}
+
+.brand__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.brand__item {
+  width: 240px;
+  height: fit-content;
+  padding: 0 25px;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* --- end brand --- */
+
+@media only screen and (max-width: 769px) {
+  .brand {
+    padding-top: 3vmax;
+    padding-bottom: 3vmax;
+  }
+
+  .brand__item {
+    width: 18rem;
+    height: fit-content;
+    padding: 0 15px;
+  }
+
+  .brand__item img {
+    aspect-ratio: 21 / 9;
+  }
+}
